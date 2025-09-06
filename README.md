@@ -12,7 +12,7 @@
 *Login com erro - Status 401*
 
 #### 👥 Testes de Criação de Usuário
-![User Creation Successful](./docs/Images/create-user-success.png)
+![User Creation Successful](./docs/Images/create-user.png)
 *Usuário criado com sucesso - Status 201*
 
 ![User Creation Error](./docs/Images/create-user-error.png)
