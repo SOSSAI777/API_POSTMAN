@@ -8,7 +8,7 @@
 ![Login Successful](./docs/Images/login-user.png)
 *Login realizado com sucesso - Status 200*
 
-![Login Error](./docs/Images/Error-login.png) 
+![Login Error](./docs/Images/Erro-login.png) 
 *Login com erro - Status 401*
 
 #### 👥 Testes de Criação de Usuário
