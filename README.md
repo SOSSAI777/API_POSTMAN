@@ -3,7 +3,7 @@
 ## 📸 Evidências de Testes
 
 ### Testes no Postman
-![Login Successful](./docs/images/login-user.png)
+![Login Successful](./docs/Images/login-user.png)
 *Login realizado com sucesso - Status 200*
 
 ![Login Error](./docs/images/postman-login-error.png) 
