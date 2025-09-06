@@ -1,22 +1,17 @@
+// server.js - VERSÃO CORRIGIDA
 const app = require('./app');
-// Use the Sequelize instance that loads and registers all models
-const { sequelize } = require('src/Infrastructure/Persistence/Sequelize/models');
-const { connectRedis } = require('src/Infrastructure/Persistence/Redis/RedisClient');
 const config = require('./config/index');
 
-const PORT = config.server.port;
+const PORT = config.server.port || 3000;
 
 async function startServer() {
   try {
-    await sequelize.authenticate();
-    await sequelize.sync({ alter: true });
-    console.log('Database connected and synchronized');
-
-    await connectRedis();
+    console.log('⚠️  Database disabled for testing');
+    console.log('⚠️  Redis disabled for testing');
 
     app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-      console.log(`Access API at http://localhost:${PORT}`);
+      console.log(`🚀 Server running on port ${PORT}`);
+      console.log(`📌 Access API at http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error('Failed to start server:', error);

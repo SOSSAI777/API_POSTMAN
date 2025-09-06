@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   postgres:
     image: postgres:16
@@ -21,6 +23,24 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+
+  api:
+    build: .
+    container_name: api-login-trabalho-unicv
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      PORT: 3000
+      DB_DIALECT: postgres
+      DATABASE_URL: postgres://postgres:password@postgres:5432/exemplo_node
+      JWT_SECRET: supersecretjwtkey
+      JWT_EXPIRES_IN: 1h
+      REDIS_URL: redis://redis:6379
+      REDIS_PASSWORD: password
 
 volumes:
   postgres_data:
