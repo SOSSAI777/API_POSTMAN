@@ -1,27 +1,17 @@
-# 🔐 API de Autenticação - Node.js + Docker
+# API Login - Trabalho UNICV
 
-## 📋 Descrição
-API de login com JWT, Redis, PostgreSQL e Docker
+## 📸 Evidências de Testes
 
-## 🧪 Testes Realizados
+### Testes no Postman
+![Login Successful](./docs/images/login-user.png)
+*Login realizado com sucesso - Status 200*
 
-### Postman Tests
-<div align="center">
+![Login Error](./docs/images/postman-login-error.png) 
+*Login com erro - Status 401*
 
-![Login Success](./docs/images/login-user.png)
-<em>Login bem-sucedido - Token JWT retornado</em>
+### Testes no Docker
+![Docker Containers](./docs/images/docker-containers.png)
+*Containers rodando: API, Redis e PostgreSQL*
 
-<br/>
-
-![Login Error](./docs/images/login-error.png)
-<em>Login com credenciais inválidas</em>
-
-</div>
-
-### Docker Tests
-![Docker Containers](./docs/images/docker-ps.png)
-*Containers rodando perfeitamente*
-
-## 🚀 Como Executar
-```bash
-docker-compose up
+![Docker Logs](./docs/images/docker-logs.png)
+*Logs da aplicação mostrando autenticação JWT*
