@@ -1,26 +1,19 @@
-# API Login - Trabalho UNICV
+# 🔐 API de Autenticação - Trabalho UNICV
 
-## 📸 Evidências de Testes
+## 📋 Fluxo de Autenticação - Comprovantes
 
-### Testes no Postman
+### 1. 👤 Registro de Usuário
+![Registro de Usuário](./docs/images/registro-usuario.png)
+*Registro do aluno com nome e email institucional*
 
-#### 🔐 Testes de Autenticação
-![Login Successful](./docs/Images/login-user.png)
-*Login realizado com sucesso - Status 200*
+### 2. 🔐 Geração do Token JWT  
+![Geração do Token JWT](./docs/images/geracao-token.png)
+*Geração do token JWT após login bem-sucedido*
 
-![Login Error](./docs/Images/error-login.png) 
-*Login com erro - Status 401*
+### 3. 🚀 Consumo da API com Token
+![Consumo da API](./docs/images/rota-protegida.png)
+*Acesso à rota protegida utilizando o token JWT no Header*
 
-#### 👥 Testes de Criação de Usuário
-![User Creation Successful](./docs/Images/create-user.png)
-*Usuário criado com sucesso - Status 201*
-
-![User Creation Error](./docs/Images/create-user-error.png)
-*Erro na criação de usuário - Status 400*
-
-### 🐳 Testes no Docker
-![Docker Containers](./docs/Images/docker-containers.png)
-*Containers rodando: API, Redis e PostgreSQL*
-
-![Docker Logs](./docs/Images/docker-logs.png)
-*Logs da aplicação mostrando autenticação JWT*
+## 🐳 Infraestrutura
+![Containers Docker](./docs/images/docker-containers.png)
+*Containers rodando: API Node.js, Redis e PostgreSQL*
