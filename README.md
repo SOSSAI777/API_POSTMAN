@@ -3,7 +3,7 @@
 ## 📋 Fluxo de Autenticação - Comprovantes
 
 ### 1. 👤 Registro de Usuário
-![Registro de Usuário](./docs/images/RegistrodeUsuario.png)
+![Registro de Usuário](docs/Images/Registro de Usuario.png)
 *Registro do aluno com nome e email institucional*
 
 ### 2. 🔐 Geração do Token JWT  
